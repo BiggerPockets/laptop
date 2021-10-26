@@ -159,7 +159,7 @@ if [ ! -d "$HOME/.asdf" ]; then
   append_to_zshrc "source $HOME/.asdf/asdf.sh" 1
 fi
 
-if [ ! "$HOME/.asdfrc"]; then
+if [ ! -f "$HOME/.asdfrc" ]; then
   echo "legacy_version_file = yes" > "$HOME/.asdfrc"
 fi
 
@@ -201,7 +201,7 @@ fancy_echo "Installing latest Node ..."
 bash "$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring"
 install_asdf_language "nodejs"
 
-if [[ $(uname -p) == 'arm' ]]; then
+if [ "$(uname -p)" = 'arm' ]; then
   fancy_echo "Detected M1 hardware."
   fancy_echo "Installing Rosetta ..."
   softwareupdate --install-rosetta

@@ -199,6 +199,12 @@ fancy_echo "Installing latest Node ..."
 bash "$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring"
 install_asdf_language "nodejs"
 
+if [[ $(uname -p) == 'arm' ]]; then
+  fancy_echo "Detected M1 hardware."
+  fancy_echo "Installing Rosetta ..."
+  softwareupdate --install-rosetta
+fi
+
 if [ -f "$HOME/.laptop.local" ]; then
   fancy_echo "Running your customizations from ~/.laptop.local ..."
   # shellcheck disable=SC1090

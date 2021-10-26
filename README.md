@@ -1,11 +1,22 @@
 Laptop
 ======
 
-Laptop is a script to set up a macOS laptop for web and mobile development.
+A script to set up a macOS laptop for BiggerPockets web development.
 
-It can be run multiple times on the same machine safely.
-It installs, upgrades, or skips packages
-based on what is already installed on the machine.
+Install
+-------
+
+**1. Download:**
+
+```sh
+curl --remote-name https://raw.githubusercontent.com/biggerpockets/laptop/master/mac
+```
+
+**2. Execute:**
+
+```sh
+sh mac 2>&1 | tee ~/laptop.log
+```
 
 Requirements
 ------------
@@ -23,36 +34,6 @@ We support:
 Older versions may work but aren't regularly tested.
 Bug reports for older versions are welcome.
 
-Install
--------
-
-Download the script:
-
-```sh
-curl --remote-name https://raw.githubusercontent.com/biggerpockets/laptop/master/mac
-```
-
-Review the script (avoid running scripts you haven't read!):
-
-```sh
-less mac
-```
-
-Execute the downloaded script:
-
-```sh
-sh mac 2>&1 | tee ~/laptop.log
-```
-
-Optionally, review the log:
-
-```sh
-less ~/laptop.log
-```
-
-Optionally, [install thoughtbot/dotfiles][dotfiles].
-
-[dotfiles]: https://github.com/thoughtbot/dotfiles#install
 
 Debugging
 ---------

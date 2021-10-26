@@ -114,6 +114,7 @@ tap "thoughtbot/formulae"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "heroku/brew"
+tap "elastic/tap"
 
 # Unix
 brew "universal-ctags", args: ["HEAD"]
@@ -141,7 +142,9 @@ brew "imagemagick"
 brew "libyaml" # should come after openssl
 brew "coreutils"
 brew "yarn"
-cask "gpg-suite"
+
+# Elasticsearch
+brew "elastic/tap/elasticsearch-full"
 
 # Databases
 brew "postgres", restart_service: :changed

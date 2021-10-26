@@ -204,7 +204,7 @@ install_asdf_language "nodejs"
 if [ "$(uname -p)" = 'arm' ]; then
   fancy_echo "Detected M1 hardware."
   fancy_echo "Installing Rosetta ..."
-  softwareupdate --install-rosetta
+  softwareupdate --install-rosetta --agree-to-license
 fi
 
 if [ -f "$HOME/.laptop.local" ]; then

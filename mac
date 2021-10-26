@@ -131,7 +131,7 @@ brew "heroku/brew/heroku"
 brew "gh"
 
 # Image manipulation
-brew "imagemagick"
+brew "imagemagick@6"
 
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl

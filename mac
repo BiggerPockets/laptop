@@ -135,6 +135,7 @@ brew "imagemagick@6"
 
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
+brew "libxml2"
 brew "coreutils"
 brew "yarn"
 

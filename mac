@@ -147,6 +147,9 @@ brew "postgres", restart_service: :changed
 brew "postgis"
 brew "redis", restart_service: :changed
 brew "memcached", restart_service: :changed
+
+# GUI apps
+cask "zoom"
 EOF
 
 fancy_echo "Update heroku binary ..."

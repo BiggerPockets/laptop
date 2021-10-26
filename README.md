@@ -6,15 +6,11 @@ A script to set up a macOS laptop for BiggerPockets web development.
 Install
 -------
 
-**1. Download:**
-
 ```sh
+# Download
 curl --remote-name https://raw.githubusercontent.com/biggerpockets/laptop/master/mac
-```
 
-**2. Execute:**
-
-```sh
+# Execute
 sh mac 2>&1 | tee ~/laptop.log
 ```
 
